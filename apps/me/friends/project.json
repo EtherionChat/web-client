@@ -1,0 +1,83 @@
+{
+  "$schema": "..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
+  "sourceRoot": "apps/me/friends/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/me/friends",
+        "index": "apps/me/friends/src/index.html",
+        "baseHref": "/",
+        "main": "apps/me/friends/src/main.tsx",
+        "polyfills": "apps/me/friends/src/polyfills.ts",
+        "tsConfig": "apps/me/friends/tsconfig.app.json",
+        "assets": [
+          "apps/me/friends/src/favicon.ico",
+          "apps/me/friends/src/assets"
+        ],
+        "styles": ["apps/me/friends/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/me/friends/src/environments/environment.ts",
+              "with": "apps/me/friends/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "me-friends:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "me-friends:build:development"
+        },
+        "production": {
+          "buildTarget": "me-friends:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/me/friends/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/me/friends"],
+      "options": {
+        "jestConfig": "apps/me/friends/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
