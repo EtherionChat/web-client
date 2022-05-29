@@ -86,6 +86,7 @@ specifiers:
   free-tex-packer-core: ^0.3.4
   gl-matrix: ^3.4.3
   grid-engine: ^2.16.0
+  immer: ^9.0.14
   inspx: 0.0.1-alpha.6
   is-mobile: ^3.1.1
   jest: 27.5.1
@@ -178,6 +179,7 @@ dependencies:
   fabric: 5.2.1
   gl-matrix: 3.4.3
   grid-engine: 2.16.0_phaser@3.55.2
+  immer: 9.0.14
   is-mobile: 3.1.1
   joi: 17.6.0
   lexical: 0.2.9

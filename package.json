@@ -70,6 +70,7 @@
     "fabric": "^5.2.1",
     "gl-matrix": "^3.4.3",
     "grid-engine": "^2.16.0",
+    "immer": "^9.0.14",
     "is-mobile": "^3.1.1",
     "joi": "^17.6.0",
     "lexical": "^0.2.9",
