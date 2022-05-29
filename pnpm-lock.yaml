@@ -53,6 +53,7 @@ specifiers:
   '@testing-library/react': 13.1.1
   '@testing-library/user-event': ^14.2.0
   '@types/commonmark': ^0.27.5
+  '@types/gl-matrix': ^3.2.0
   '@types/jest': 27.4.1
   '@types/katex': ^0.14.0
   '@types/node': 16.11.7
@@ -83,6 +84,7 @@ specifiers:
   eslint-plugin-react-hooks: 4.5.0
   fabric: ^5.2.1
   free-tex-packer-core: ^0.3.4
+  gl-matrix: ^3.4.3
   grid-engine: ^2.16.0
   inspx: 0.0.1-alpha.6
   is-mobile: ^3.1.1
@@ -174,6 +176,7 @@ dependencies:
   core-js: 3.22.5
   dayjs: 1.11.2
   fabric: 5.2.1
+  gl-matrix: 3.4.3
   grid-engine: 2.16.0_phaser@3.55.2
   is-mobile: 3.1.1
   joi: 17.6.0
@@ -225,6 +228,7 @@ devDependencies:
   '@nrwl/workspace': 14.1.5_rqewt5og66hvojoiyg3twdwkay
   '@testing-library/react': 13.1.1_ef5jwxihqo6n7gxfmzogljlgcm
   '@types/commonmark': 0.27.5
+  '@types/gl-matrix': 3.2.0
   '@types/jest': 27.4.1
   '@types/katex': 0.14.0
   '@types/node': 16.11.7
@@ -6084,6 +6088,13 @@ packages:
     dependencies:
       '@types/node': 17.0.33
 
+  /@types/gl-matrix/3.2.0:
+    resolution: {integrity: sha512-CY4JAtSOGQX7rVgqVuOk7ZfaLv8VeadDMPj3smMOy8Hp/YiHONa3Mr0mEUgbo0eEwV7+Owpf6BwspcA7hv4NXg==}
+    deprecated: This is a stub types definition. gl-matrix provides its own type definitions, so you do not need this installed.
+    dependencies:
+      gl-matrix: 3.4.3
+    dev: true
+
   /@types/glob/7.2.0:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
@@ -10128,6 +10139,9 @@ packages:
     dependencies:
       assert-plus: 1.0.0
     dev: true
+
+  /gl-matrix/3.4.3:
+    resolution: {integrity: sha512-wcCp8vu8FT22BnvKVPjXa/ICBWRq/zjFfdofZy1WSpQZpphblv12/bOQLBC1rMM7SGOFS9ltVmKOHil5+Ml7gA==}
 
   /glob-parent/5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
