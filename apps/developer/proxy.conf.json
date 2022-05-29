@@ -1,0 +1,9 @@
+{
+  "/developer": {
+    "target": "http://localhost:8003",
+    "pathRewrite": {
+      "^/developer": "/"
+    },
+    "secure": false
+  }
+}

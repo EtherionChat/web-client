@@ -1,0 +1,44 @@
+{
+  "/home/_next": {
+    "target": "http://localhost:8001",
+    "pathRewrite": {
+      "^/home/_next": "/_next"
+    },
+    "secure": false
+  },
+  "/login": {
+    "target": "http://localhost:8002",
+    "changeOrigin": true,
+    "secure": false
+  },
+  "/register": {
+    "target": "http://localhost:8002",
+    "changeOrigin": true,
+    "secure": false
+  },
+  "/developer": {
+    "target": "http://localhost:8003",
+    "changeOrigin": true,
+    "secure": false
+  },
+  "/friends": {
+    "target": "http://localhost:8004",
+    "changeOrigin": true,
+    "secure": false
+  },
+  "/invite": {
+    "target": "http://localhost:8005",
+    "changeOrigin": true,
+    "secure": false
+  },
+  "/invite/*": {
+    "target": "http://localhost:8005",
+    "changeOrigin": true,
+    "secure": false
+  },
+  "/error": {
+    "target": "http://localhost:8006",
+    "changeOrigin": true,
+    "secure": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "/auth/_next": {
+    "target": "http://localhost:8002",
+    "pathRewrite": {
+      "^/auth/_next": "/_next"
+    },
+    "secure": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "/invite/_next": {
+    "target": "http://localhost:8005",
+    "pathRewrite": {
+      "^/invite/_next": "/_next"
+    },
+    "secure": false
+  }
+}

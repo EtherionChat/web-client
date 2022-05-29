@@ -1,0 +1,9 @@
+{
+  "/error": {
+    "target": "http://localhost:8006",
+    "pathRewrite": {
+      "^/error": "/"
+    },
+    "secure": false
+  }
+}

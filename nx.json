@@ -8,11 +8,14 @@
     "defaultCollection": "@nrwl/react"
   },
   "implicitDependencies": {
+    "workspace.json": "*",
     "package.json": {
       "dependencies": "*",
       "devDependencies": "*"
     },
-    ".eslintrc.json": "*"
+    "tsconfig.base.json": "*",
+    "nx.json": "*",
+    "tslint.json": "*"
   },
   "tasksRunnerOptions": {
     "default": {
@@ -53,5 +56,5 @@
       }
     }
   },
-  "defaultProject": "home"
+  "defaultProject": "me"
 }
