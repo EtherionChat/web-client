@@ -1,0 +1,9 @@
+{
+  "/me/*": {
+    "target": "http://localhost:8004",
+    "pathRewrite": {
+      "^/me/*": "/*"
+    },
+    "secure": false
+  }
+}

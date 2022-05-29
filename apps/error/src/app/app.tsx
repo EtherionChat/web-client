@@ -37,7 +37,7 @@ export function App() {
           }
         />
         <Route
-          path="/page-2"
+          path="/error"
           element={
             <div>
               <Link to="/">Click here to go back to root page.</Link>

@@ -1,0 +1,55 @@
+.viewer {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-size: 25px 25px;
+  background-image: linear-gradient(to right, #f1f1f1 1px, transparent 1px),
+    linear-gradient(to bottom, #f1f1f1 1px, transparent 1px);
+}
+.viewport {
+  position: absolute !important;
+  width: 400px;
+  height: 600px;
+  will-change: transform;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ii8+PHBhdGggZmlsbD0iI0YxRjFGMSIgZD0iTSAwIDggSCAxNiBWIDAgSCA4IFYgMTYgSCAwIi8+PC9zdmc+');
+}
+
+.ruler-reset {
+  position: absolute !important;
+  background: #333333;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  border-right: 1px solid var(--back4);
+  border-bottom: 1px solid var(--back4);
+  box-sizing: border-box;
+  cursor: pointer;
+  left: 0;
+  top: 0px;
+  z-index: 50;
+}
+
+.guides {
+  position: absolute !important;
+  background: #000 !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(1px);
+  z-index: 50;
+
+  &.horizontal {
+    left: 30px;
+    width: calc(100% - 30px);
+    height: 30px !important;
+  }
+
+  &.vertical {
+    top: 30px;
+    height: 100%;
+    width: 30px !important;
+  }
+}

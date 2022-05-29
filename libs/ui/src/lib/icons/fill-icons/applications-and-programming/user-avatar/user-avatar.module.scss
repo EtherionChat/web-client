@@ -1,0 +1,55 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+@property --start {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 0px;
+}
+@property --end {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 100px;
+}
+@property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 45deg;
+}
+
+.woosh-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+
+  background: repeating-linear-gradient(
+    var(--angle, 45deg),
+    var(--color, black),
+    var(--color, black) var(--start),
+    transparent var(--start),
+    transparent var(--end)
+  );
+
+  &.woosh {
+    @media screen and (prefers-reduced-motion: no-preference) {
+      animation: woosh var(--speed, 2s);
+    }
+  }
+}
+
+@keyframes woosh {
+  50%,
+  75% {
+    --start: var(--end);
+  }
+  100% {
+    --start: 0px;
+  }
+}

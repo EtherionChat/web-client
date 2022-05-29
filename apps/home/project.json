@@ -1,5 +1,6 @@
 {
   "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
+  "root": "apps/home",
   "sourceRoot": "apps/home",
   "projectType": "application",
   "targets": {
@@ -21,7 +22,9 @@
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "home:build",
-        "dev": true
+        "dev": true,
+        "port": 8001,
+        "proxyConfig": "apps/home/proxy.conf.json"
       },
       "configurations": {
         "development": {

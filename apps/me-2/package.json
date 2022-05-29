@@ -1,0 +1,36 @@
+{
+  "name": "me",
+  "version": "0.0.0",
+  "private": true,
+  "port": 8004,
+  "proxy": "apps/me/proxy.conf.json",
+  "dependencies": {},
+  "scripts": {
+    "start": "craco start",
+    "serve": "pnpm start",
+    "build": "BUILD_PATH=../../dist/apps/me craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-dev-utils": "^12.0.1"
+  }
+}
