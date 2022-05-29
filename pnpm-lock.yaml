@@ -61,6 +61,7 @@ specifiers:
   '@types/react-helmet': ^6.1.5
   '@types/react-router-dom': 5.3.3
   '@types/react-transition-group': ^4.4.4
+  '@types/three': ^0.140.0
   '@typescript-eslint/eslint-plugin': ~5.18.0
   '@typescript-eslint/parser': ~5.18.0
   '@use-gesture/react': ^10.2.15
@@ -120,6 +121,7 @@ specifiers:
   sass: 1.43.2
   split-pane-react: ^0.0.1
   tailwindcss: ^3.0.24
+  three: ^0.141.0
   ts-jest: 27.1.4
   ts-node: 9.1.1
   tslib: ^2.3.0
@@ -196,13 +198,14 @@ dependencies:
   react-router-dom: 6.3.0_ef5jwxihqo6n7gxfmzogljlgcm
   react-scripts: 5.0.1_r3ut7xvahocoyy5tfyrnmiktu4
   react-selecto: 1.16.2
-  react-spring: 9.4.5_ef5jwxihqo6n7gxfmzogljlgcm
+  react-spring: 9.4.5_fozlczatik2xxzyg34dm3762um
   react-transition-group: 4.4.2_ef5jwxihqo6n7gxfmzogljlgcm
   redux: 4.2.0
   redux-thunk: 2.4.1_redux@4.2.0
   regenerator-runtime: 0.13.7
   split-pane-react: 0.0.1
   tailwindcss: 3.0.24_ts-node@9.1.1
+  three: 0.141.0
   tslib: 2.4.0
   web-vitals: 2.1.4
 
@@ -230,6 +233,7 @@ devDependencies:
   '@types/react-helmet': 6.1.5
   '@types/react-router-dom': 5.3.3
   '@types/react-transition-group': 4.4.4
+  '@types/three': 0.140.0
   '@typescript-eslint/eslint-plugin': 5.18.0_qop66kdz473gtxyqakjhziybiy
   '@typescript-eslint/parser': 5.18.0_uhoeudlwl7kc47h4kncsfowede
   babel-jest: 27.5.1
@@ -5259,7 +5263,7 @@ packages:
       react: 18.1.0
     dev: false
 
-  /@react-spring/three/9.4.5_react@18.1.0:
+  /@react-spring/three/9.4.5_react@18.1.0+three@0.141.0:
     resolution: {integrity: sha512-mArxfIhg9kyFL/8Y09TarS/ZKLd/qAWS4T3Ro/B46ILPfPnoPywDdw9/rknZihy/tslnviCgMrB4pZ29X1Dfxw==}
     peerDependencies:
       '@react-three/fiber': '>=6.0'
@@ -5271,6 +5275,7 @@ packages:
       '@react-spring/shared': 9.4.5_react@18.1.0
       '@react-spring/types': 9.4.5
       react: 18.1.0
+      three: 0.141.0
     dev: false
 
   /@react-spring/types/9.4.5:
@@ -6275,6 +6280,10 @@ packages:
     dependencies:
       '@types/jest': 27.4.1
     dev: false
+
+  /@types/three/0.140.0:
+    resolution: {integrity: sha512-YPJLSIY6uKUOp1k6BZYDq5GtEIdhfeK04UCbc9IPAVbdn/RNjkfrbnyd7smrsNkJhc0IFASLpd3AAYgwqgXKVQ==}
+    dev: true
 
   /@types/trusted-types/2.0.2:
     resolution: {integrity: sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg==}
@@ -14413,13 +14422,13 @@ packages:
       react: 18.1.0
     dev: false
 
-  /react-spring/9.4.5_ef5jwxihqo6n7gxfmzogljlgcm:
+  /react-spring/9.4.5_fozlczatik2xxzyg34dm3762um:
     resolution: {integrity: sha512-FRIXQGR+jG+Fx4UcqhF0b5jMEU3Q5QcZ8rEVWKqZgrrn92C1HcqtuZy7dH+rZ6uNGjnlV7HBf8iprJaJ+350LA==}
     dependencies:
       '@react-spring/core': 9.4.5_react@18.1.0
       '@react-spring/konva': 9.4.5_react@18.1.0
       '@react-spring/native': 9.4.5_react@18.1.0
-      '@react-spring/three': 9.4.5_react@18.1.0
+      '@react-spring/three': 9.4.5_react@18.1.0+three@0.141.0
       '@react-spring/web': 9.4.5_ef5jwxihqo6n7gxfmzogljlgcm
       '@react-spring/zdog': 9.4.5_ef5jwxihqo6n7gxfmzogljlgcm
     transitivePeerDependencies:
@@ -15767,6 +15776,10 @@ packages:
 
   /text-table/0.2.0:
     resolution: {integrity: sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=}
+
+  /three/0.141.0:
+    resolution: {integrity: sha512-JaSDAPWuk4RTzG5BYRQm8YZbERUxTfTDVouWgHMisS2to4E5fotMS9F2zPFNOIJyEFTTQDDKPpsgZVThKU3pXA==}
+    dev: false
 
   /throat/6.0.1:
     resolution: {integrity: sha512-8hmiGIJMDlwjg7dlJ4yKGLK8EsYqKgPWbG3b4wjJddKNwc7N7Dpn08Df4szr/sZdMVeOstrdYSsqzX6BYbcB+w==}
