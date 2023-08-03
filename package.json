@@ -73,7 +73,7 @@
     "joi": "^17.6.0",
     "lexical": "^0.2.9",
     "next": "12.1.5",
-    "next-auth": "^4.3.4",
+    "next-auth": "^4.20.1",
     "overlap-area": "^1.0.0",
     "phaser": "^3.55.2",
     "postcss": "^8.4.14",
