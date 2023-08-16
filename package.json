@@ -24,7 +24,7 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.3",
-    "@excalidraw/excalidraw": "^0.11.0",
+    "@excalidraw/excalidraw": "^0.15.3",
     "@lexical/clipboard": "^0.2.9",
     "@lexical/code": "^0.2.9",
     "@lexical/file": "^0.2.9",
